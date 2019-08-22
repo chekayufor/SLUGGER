@@ -1,7 +1,6 @@
 
-const slugger = (val)=> {
-    let str = val.toString();
-    return str.split(' ').join('-');
+const slugger = (...val)=> {
+    return val.join(' ').split(' ').join('-');
 } 
 
 module.exports = slugger;
